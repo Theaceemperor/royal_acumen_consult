@@ -9,9 +9,9 @@ import Head from 'next/head';
 export default function Home() {
   const [ galleryImages,setGalleryImages ] = React.useState([
     { id: 1, src: '/images/1.jpg'},
-    { id: 3, src: '/images/5.jpg'},
-    { id: 5, src: '/images/7.jpg'},
-    { id: 6, src: '/images/8.jpg'},
+    { id: 3, src: '/images/19.jpg'},
+    { id: 5, src: '/images/15.jpg'},
+    { id: 6, src: '/images/17.jpg'},
   ])
 
   return (
@@ -24,8 +24,8 @@ export default function Home() {
 
         <Services />
 
-        <AboutCol header={"Royal Acumen Consult"} imageSrc={'/images/bg.jpg'}>
-          <div className='grid grid-cols-2 p-1 gap-1'>
+        <AboutCol header={"Royal Acumen Consult"} imageSrc={'/images/12.jpg'}>
+          <div className='grid grid-cols-2 p-1 gap-2'>
             {
               galleryImages.map((item) => (
                 <Link href={"/gallery"} 
@@ -36,7 +36,7 @@ export default function Home() {
                   width={820}
                   height={1080}
                   src={item.src}
-                  className='h-auto  rounded-md bg-[#666666]'
+                  className='h-auto rounded-md bg-[#26282A] border-2 border-[tan] shadow-md shadow-[#26282A]'
                   />
                 </Link>
               ))

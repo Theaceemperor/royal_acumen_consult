@@ -1,18 +1,23 @@
 
 import React from "react";
 import ServiceRow from "./servicerow";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Services() {
+    const router = useRouter();
     const [ services,setServices ] = React.useState([
         { id: 1, link: "#", text: "Public health consultation", imageName: "bg-[url('/images/8.jpg')] bg-cover bg-center h-full" },
         { id: 2, link: "#", text: "General contracts", imageName: "bg-[url('/images/3.jpg')] bg-cover bg-center h-full" },
-        { id: 3, link: "#", text: "Sales", imageName: "bg-[url('/images/10.jpg')] bg-cover bg-center h-full" },
+        { id: 3, link: "#", text: "Sales", imageName: "bg-[url('/images/11.jpg')] bg-cover bg-center h-full" },
       ]);
       
     return (
         <>
-            <blockquote className='flex flex-col gap-1 text-center justify-center my-5 text-[#666666]'>
-                <h3 className='font-bold text-xl underline decoration-[#ebccab]'>Our Services</h3>
+            <blockquote className='flex flex-col gap-1 text-center justify-center my-5 text-[#26282A]'>
+                <Link href={'#service'}>
+                    <h3 className='font-bold text-xl underline decoration-[tan]'>Our Services</h3>
+                </Link>
                 <small>Consultation services tailored for you!</small>
             </blockquote>
             

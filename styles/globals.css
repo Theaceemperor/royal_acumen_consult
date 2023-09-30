@@ -2,5 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
-    
+    @keyframes example {
+        from {left: -20px;}
+        to {left: 20%;}
+      }
 }

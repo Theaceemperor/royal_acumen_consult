@@ -6,10 +6,10 @@ export default function ServiceRow({link,text,imageClass}) {
     const router = useRouter();
 
     return (
-      <section className='h-[20vh] mx-1 p-1 sm:h-[30vh] bg-[#ebccab] w-[260px] sm:w-[300px] shadow-md shadow-[#666666] rounded-md'>
+      <section className='h-[40vh] mx-1 p-1 sm:h-[50vh] bg-[tan] w-[240px] sm:w-[350px] shadow-lg shadow-[#26282A] rounded-md'>
         <div className={imageClass}>
-          <div className=' h-full bg-black/50 flex justify-center items-center text-center text-[#Ebccab] rounded-md font-bold text-lg'>
-            <h3>
+          <div className=' h-full bg-[#26282A]/70 flex justify-center items-center text-center text-[tan] rounded-md font-bold text-lg'>
+            <h3 className="text-xl">
               <Link href={link}>
                 {text}
             </Link></h3>
@@ -22,9 +22,9 @@ export default function ServiceRow({link,text,imageClass}) {
 export function GalleryRow({imageClass}) {
 
   return (
-    <section className='h-[20vh] sm:h-[50vh] bg-[#ebccab] w-[260px] sm:w-[400px] shadow-md shadow-[#666666] rounded-md'>
+    <section className='h-[40vh] sm:h-[50vh] bg-[#26282A]/60 w-[260px] sm:w-[400px] shadow-md shadow-[#26282A] rounded-md'>
       <div className={imageClass}>
-        <div className=' h-full hover:bg-black/50 flex justify-center items-center text-center text-[#Ebccab] rounded-md font-bold text-lg'>
+        <div className=' h-full hover:bg-[#26282A]/70 flex justify-center items-center text-center text-[tan] rounded-md font-bold text-lg'>
         </div>
       </div>
     </section>

@@ -24,7 +24,7 @@ export default function Reviews() {
         <section className="flex w-full flex-col gap-2 justify-center items-center lg:grid md:grid lg:grid-cols-4 md:grid-cols-2 px-2 my-5 text-[#666666]">
             {
                 names.map((item,index) => (
-                    <article key={index} className="flex flex-col gap-2 p-2 items-center justify-center rounded-md border-2 border-[#ebccab]">
+                    <article key={index} className="flex flex-col gap-2 p-2 items-center justify-center rounded-md border-2 border-[#26282A] bg-[tan]/50">
                         {
                             review.map((text,index) => (
                                 <div key={index} className="flex flex-col gap-2">
@@ -33,7 +33,7 @@ export default function Reviews() {
                                         alt="product image"
                                         width={957}
                                         height={652}
-                                        className="w-[40px] h-[40px] border border-[#ebccab] rounded-full"
+                                        className="w-[40px] h-[40px] border border-[#26282A] rounded-full"
                                         src={"/images/5.jpg"}
                                         />
                                         <h3 className="font-bold">{item}</h3>

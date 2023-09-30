@@ -7,9 +7,9 @@ export default function Cta() {
     return (
         <section className='my-5 h-[30vh] p-2 sm:p-5 sm:h-[50vh]'>
           <div className="bg-[url('/images/cta.jpg')] bg-cover bg-center h-full ">
-            <div className='w-full h-full bg-black/50 flex flex-col gap-3 sm:gap-5 justify-center items-center text-center text-[#Ebccab] rounded-md'>
+            <div className='w-full h-full bg-black/50 flex flex-col gap-3 sm:gap-5 justify-center items-center text-center text-[tan] rounded-md'>
               <p className='font-bold px-2'>Book our services anywhere in the world today!</p>
-              <button onClick={() => router.push('/contact')} className='border-b border-[#666666] text-md hover:border-y hover:border-[#Ebccab]'>Contact Us</button>
+              <button onClick={() => router.push('/contact')} className='border-b border-[tan] text-md hover:border-y hover:border-[tan] hover:rounded-md duration-300 py-1 px-2 animate-bounce hover:animate-none'>Contact Us</button>
               <small className='px-2'>Healthy consultation service you deserve!</small>
             </div>
           </div>

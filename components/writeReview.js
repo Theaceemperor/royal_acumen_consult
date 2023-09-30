@@ -13,7 +13,7 @@ export default function WriteReviews() {
     const [value, setValue] = React.useState(3);
         
     return (
-        <div className="p-2 my-5 flex flex-col gap-2 flex items-center justify-center bg-[#ebccab]/50 w-[fit-content] mx-2 rounded-md">
+        <div className="p-2 my-5 flex flex-col gap-2 flex items-center justify-center bg-[#26282A] w-[fit-content] mx-2 rounded-md text-[tan]">
             <h3 className="font-bold text-lg">Write a review</h3>
             <form className="flex flex-col gap-2 rounded-lg items-center justify-center p-5 w-[fit-content]">
                 <div className="flex flex-col lg:flex-row md:flex-row w-full gap-5">
@@ -22,6 +22,8 @@ export default function WriteReviews() {
                     label={"Your name"}
                     onChange={(text) => setFormName(text.target.value)}
                     value={formName}
+                    color="error"
+                    style={{backgroundColor:'tan',borderRadius:'5px'}}
                     />
                     <TextField 
                     variant="filled"
@@ -29,12 +31,14 @@ export default function WriteReviews() {
                     multiline={true}
                     value={formInput}
                     onChange={(text) => setFormInput(text.target.value)}
+                    color="error"
+                    style={{backgroundColor:'tan',borderRadius:'5px'}}
                     />
                 </div>
                 <Typography component="legend">Rate us</Typography>
                     <Rating
                         style={{
-                            color:'#666666'
+                            color:'tan',outline:'tan'
                         }}
                         name="simple-controlled"
                         value={value}
@@ -44,7 +48,7 @@ export default function WriteReviews() {
                     />
                 <Button 
                 style={{
-                    color:'#ebccab', background:'black'
+                    color:'#26282A', background:'tan'
                 }}>Post</Button>
             </form>
         </div>

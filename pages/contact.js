@@ -8,7 +8,6 @@ import React from "react";
 
 export default function Contact() {
     const [ contactDetails,setCompanyDetails ] = React.useState([
-        {id: 1, header: 'Company Name', body: 'Royal Acumen Consult'},
         {id: 2, header: 'Company Email', body: 'spadesinstitute.empire@gmail.com'},
         {id: 3, header: 'Company Phone', body: '+123456789'},
         {id: 4, header: 'Company Address', body: 'Abuja, FCT.'},
@@ -22,7 +21,7 @@ export default function Contact() {
                 <meta name="description" content="royal acumen consult is dedicated to providing top-notch services to ensure the success of your business." />
             </Head>
             <div className="flex items-center justify-center my-5">
-                <h1 className="text-center font-bold text-black/70 border-b border-[tan] py-1 px-2 ">Contact Us</h1>
+                <h1 className="text-center font-bold text-[@26282A] border-b border-[tan] py-1 px-2 ">Contact Us</h1>
             </div>
 
             <section className="flex flex-col sm:flex-row gap-2 justify-center items-center">

@@ -22,7 +22,7 @@ export default function ContactForm() {
 
     return (
         <section className='text-center flex flex-col justify-center items-center my-5 gap-5'>
-            <h1 className='underline decoration-[#ebccab] text-[#666666] font-bold text-lg'>Fill and Submit, we'll respond shortly</h1>
+            <h1 className='underline decoration-[tan] text-[#26282A]/80 font-bold text-lg'>Fill and Submit, we'll respond shortly</h1>
             <div>
                 <form className='text-center flex flex-col justify-center items-center gap-5' onSubmit={handleSubmit}>
                     <TextField 
