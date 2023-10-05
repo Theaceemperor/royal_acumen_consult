@@ -1,9 +1,9 @@
 
-
 import React from "react";
 import { Button, TextField } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Rating from "@mui/material/Rating";
+import Link from "next/link";
 
 
 
@@ -13,8 +13,8 @@ export default function WriteReviews() {
     const [value, setValue] = React.useState(3);
         
     return (
-        <div className="p-2 my-5 flex flex-col gap-2 flex items-center justify-center bg-[#26282A] w-[fit-content] mx-2 rounded-md text-[tan]">
-            <h3 className="font-bold text-lg">Write a review</h3>
+        <div id="write-review" className="p-2 my-5 flex flex-col gap-2 flex items-center justify-center shadow-md shadow-[tan] w-[fit-content] mx-2 rounded-md text-[tan]">
+            <h3 className="font-bold text-lg"><Link href={'#write-review'}>Write a review</Link></h3>
             <form className="flex flex-col gap-2 rounded-lg items-center justify-center p-5 w-[fit-content]">
                 <div className="flex flex-col lg:flex-row md:flex-row w-full gap-5">
                     <TextField 

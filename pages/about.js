@@ -7,12 +7,12 @@ import Head from "next/head";
 
 
 
-export default function AboutUs({header,imageSrc,body}) {
+export default function AboutUs() {
 
     return (
         <>
             <Head >
-                <link rel="shortcut icon" href="/SPADES3.ICO" type="image/x-icon" />
+                <link rel="shortcut icon" href="/raconsult.ICO" type="image/x-icon" />
                 <title>Royal Acumen Consult | About Us </title>
                 <meta name="description" content="royal acumen consult is dedicated to providing top-notch services to ensure the success of your business." />
             </Head>
