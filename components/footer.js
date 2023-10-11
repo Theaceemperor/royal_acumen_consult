@@ -8,8 +8,8 @@ export default function() {
     return (
         <>
             <section id="footer" className='bottom-0 left-0 right-0 p-1 my-5 mx-2 rounded-md bg-[#252324] text-[tan] border-y-2 border-[tan]'>
-                <div className='flex flex-col gap-2 items-center justify-center text-center'>
-                    <h3 className='underline decoration-[tan]'>What we do!</h3>
+                <div className='flex flex-col gap-2 items-center justify-center'>
+                    <h5 className='underline decoration-[tan] text-center'>What we do!</h5>
                     <p>We offer top-notch public health consultation, general contracts and sales. Feel free to contact us if you have questions regarding a service</p>
                     <ul className='flex flex-row justify-around items-center text-sm gap-5 sm:text-lg'>
                     <li><Link href={"/contact#footer"}>© 2023 Royal Acumen</Link></li>

@@ -5,9 +5,8 @@ import Link from "next/link";
 
 export default function Services() {
     const [ services,setServices ] = React.useState([
-        { id: 1, link: "#", text: "Public health consultation", imageName: "bg-[url('/images/8.jpg')] bg-cover bg-center h-full" },
-        { id: 2, link: "#", text: "General contracts", imageName: "bg-[url('/images/3.jpg')] bg-cover bg-center h-full" },
-        { id: 3, link: "#", text: "Sales", imageName: "bg-[url('/images/11.jpg')] bg-cover bg-center h-full" },
+        { id: 'general-contracts', link: "#general-contracts", text: "General contracts", imageName: "bg-[url('/images/3.jpg')] bg-cover bg-center h-full" },
+        { id: 'sales', link: "#sales", text: "Sales", imageName: "bg-[url('/images/11.jpg')] bg-cover bg-center h-full" },
       ]);
       
     return (
@@ -18,7 +17,7 @@ export default function Services() {
                 </Link>
                 <small>Consultation services tailored for you!</small>
             </blockquote>
-            <div className='flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 justify-center items-center  gap-5 sm:gap-8'>
+            <div className='flex flex-col sm:flex-row gap-5 items-center justify-center px-2 w-full sm:px-5'>
             {
                 services.map((item) => (
                 <ServiceRow key={item.id}
