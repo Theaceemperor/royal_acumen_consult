@@ -5,7 +5,7 @@ import AboutCol from '@/components/about-col';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { HappyClients, OurClientsSwipper } from '@/components/acumenPercent';
+import { HappyClients } from '@/components/acumenPercent';
 
 export default function Home() {
   const [ galleryImages,setGalleryImages ] = React.useState([
@@ -25,7 +25,7 @@ export default function Home() {
 
       <section className='flex flex-col justify-center items-center my-20 gap-3'>
         <h1 className='text-center text-2xl underline underline-offset-4'><Link href={'#stats'}>Royal Acumen stats</Link></h1>
-        <p className='text-center'><Link href={'about#about'}
+        <p className='text-center'><Link href={'/about#about'}
         className='underline'>Read about us here!</Link></p>
         <HappyClients />
       </section>
@@ -36,7 +36,7 @@ export default function Home() {
         <div className='grid grid-cols-2 p-1 gap-2'>
           {
             galleryImages.map((item) => (
-              <Link href={"/gallery"} 
+              <Link href={"#gallery"} 
               key={item.id}
               >
                 <Image 

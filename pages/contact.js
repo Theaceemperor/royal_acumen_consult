@@ -9,9 +9,16 @@ import React from "react";
 
 export default function Contact() {
     const [ contactDetails,setCompanyDetails ] = React.useState([
-        {id: 2, header: 'Company Email', body: 'spadesinstitute.empire@gmail.com'},
-        {id: 3, header: 'Company Phone', body: '+123456789'},
-        {id: 4, header: 'Company Address', body: 'Abuja, FCT.'},
+        {id: 2, header: 'Company Email', body: <span>
+            <Link className="focus:underline hover:underline" href={'mailto:info4rac@gmail.com'}>info4rac@gmail.com</Link>
+        </span> },
+        {id: 3, header: 'Company Phone', body: <span>
+            <Link className="focus:underline hover:underline" href={'tel:+2348086590003'}>+2348086590003</Link>
+        </span> },
+        {id: 4, header: 'Company Address', body: <span className="flex flex-col gap-2 my-1">
+            <p>Abuja, FCT</p>
+            <p>Maiduguri, Borno state</p>
+        </span>},
     ])
 
     return (
@@ -40,6 +47,11 @@ export default function Contact() {
 
                 <ContactForm />
             </section>
+            <div className="flex flex-col md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 gap-2 px-2 my-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244303439!2d7.367465296507847!3d9.024416367940095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1698113922014!5m2!1sen!2sng" width="600" height="450" className="rounded-md">
+                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124957.3565379407!2d13.04947683318244!3d11.841056118955521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11049f4b9b52795b%3A0x63933a66a7b20361!2sMaiduguri%2C%20Borno!5e0!3m2!1sen!2sng!4v1698114511236!5m2!1sen!2sng" width="600" height="450" className="rounded-md"></iframe>
+            </div>
         </>
     )
 }

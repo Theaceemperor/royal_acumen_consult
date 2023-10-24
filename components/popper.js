@@ -42,8 +42,8 @@ export default function PositionedMenu() {
             color: '#252324', paddingLeft: '3px', paddingRight: '3px'
         }}>
         <ul className='p-2 flex flex-col gap-2'>
-          <li className='hover:bg-[rgb(37,35,36)] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"#service"}>General contracts</Link></li>
-          <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"#service"}>Sales</Link></li>
+          <li className='hover:bg-[rgb(37,35,36)] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/#general-contracts"}>General contracts</Link></li>
+          <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/#sales"}>Sales</Link></li>
           <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"#cta"} className="flex items-center">Book here</Link></li>
         </ul>
         </blockquote>

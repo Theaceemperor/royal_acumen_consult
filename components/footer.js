@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { PowerBtn } from "./Btn";
 import { RiCustomerService2Fill } from 'react-icons/ri';
-import { FaXTwitter } from 'react-icons/fa6'
+import { BiLogoGmail } from 'react-icons/bi'
 
 export default function() {
 
@@ -20,7 +20,7 @@ export default function() {
                 </div>
             </section>
             <div className="bottom-0 right-0 fixed flex flex-col h-[100px] p-1 gap-1 items-center justify-center z-20">
-                <Link href={"#cta"}
+                <Link href={"tel:+2349023236306"}
                 className="w-[45px] h-[45px] rounded-full border border-[tan] bg-[#252324] animate-bounce flex items-center justify-center"
                 >
                     <RiCustomerService2Fill
@@ -28,10 +28,10 @@ export default function() {
                     />
                 </Link>
                 
-                <Link href={"#cta"}
+                <Link href={"mailto:info4rac@gmail.com"}
                 className="w-[45px] h-[45px] rounded-full border border-[tan] bg-[#252324] animate-spin flex items-center justify-center"
                 >
-                   <FaXTwitter className='text-[tan] text-3xl' />
+                   <BiLogoGmail className='text-[tan] text-3xl' />
                 </Link>
             </div>
         </>
