@@ -5,7 +5,7 @@ import { RiMenu4Line } from 'react-icons/ri';
 import { SiHomeassistant } from 'react-icons/si';
 import Link from 'next/link';
 import { IoIosContacts, IoMdStats } from 'react-icons/io';
-import MenuListComposition, { PositionedMenu2 } from './popper';
+import MenuListComposition, { CarrerMenu, PositionedMenu2 } from './popper';
 import { BsPersonFillAdd } from 'react-icons/bs';
 
 export default function PositionedMenu() {
@@ -20,7 +20,7 @@ export default function PositionedMenu() {
 
   return (
     <div className='top-0 right-0 fixed z-40 bg-[#252324] text-[tan] p-2 border-2 border-[tan]/80 m-1 rounded-full'>
-      <RiMenu4Line className='font-bold text-xl'
+      <RiMenu4Line className='font-bold text-2xl'
         id="demo-positioned-button"
         aria-controls={open ? 'demo-positioned-menu' : undefined}
         aria-haspopup="true"
@@ -51,7 +51,7 @@ export default function PositionedMenu() {
         <MenuItem><MenuListComposition /></MenuItem>
         <MenuItem><Link href={"/#stats"} className="flex items-center">Acumen <IoMdStats /></Link></MenuItem>
         <MenuItem><Link href={"/contact#contact-us"} className="flex items-center">C<IoIosContacts />ntact</Link></MenuItem>
-        <MenuItem><Link href={"/careers"} className="flex items-center gap-1">Careers <BsPersonFillAdd /></Link></MenuItem>
+        <MenuItem><Link href={"/careers"} className="flex items-center gap-1"><CarrerMenu /></Link></MenuItem>
         </article>
       </Menu>
     </div>

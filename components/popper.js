@@ -3,7 +3,58 @@ import Menu from '@mui/material/Menu';
 import Link from 'next/link';
 import { FaServicestack } from 'react-icons/fa6';
 import Image from 'next/image';
-import { MdWaterDrop } from 'react-icons/md';
+import { MdWaterDrop, MdWorkspacePremium } from 'react-icons/md';
+import { RiTeamFill } from 'react-icons/ri';
+import { BsPersonFillAdd, BsPersonFillCheck } from 'react-icons/bs';
+
+export function CarrerMenu() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div className='z-50'>
+      <button className='flex gap-1 items-center'
+        id="demo-positioned-button"
+        aria-controls={open ? 'demo-positioned-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >Careers <MdWorkspacePremium /></button>
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+      >
+        <blockquote
+        style={{
+            color: '#252324', paddingLeft: '3px', paddingRight: '3px'
+        }}>
+        <ul className='p-2 flex flex-col gap-2'>
+          <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#work-with-us"} scroll={false} className='flex gap-1 items-center'>Careers <BsPersonFillAdd /></Link></li>
+          <li className='hover:bg-[rgb(37,35,36)] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#our-team"} scroll={false} className='flex gap-1 items-center'>Our Team <RiTeamFill /></Link></li>
+          <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#apply"} scroll={false} className='flex gap-1 items-center'>Apply <BsPersonFillCheck /></Link></li>
+        </ul>
+        </blockquote>
+      </Menu>
+    </div>
+  );
+}
 
 export function PositionedMenu2() {
   const [anchorEl, setAnchorEl] = React.useState(null);

@@ -18,10 +18,8 @@ export default function Contact() {
         {id: 3, header: <FiPhoneCall />, body: <span>
             <Link className="focus:underline hover:underline" href={'tel:+2348086590003'}>+2348086590003</Link>
         </span> },
-        {id: 4, header: <ImLocation2 />, body: <span className="flex flex-col gap-2 my-1">
-            <p>Abuja, FCT</p>
-            <p>Maiduguri, Borno state</p>
-        </span>},
+        {id: 4, header: <ImLocation2 />, body: '26 Omega Paint Rd, 901101, Kubwa, Abuja, FCT.' },
+        {id: 5, header: <ImLocation2 />, body: 'Maiduguri, Borno state, Nigeria.' },
     ])
 
     return (
@@ -51,7 +49,7 @@ export default function Contact() {
                 <ContactForm />
             </section>
             <div className="flex flex-col md:grid lg:grid md:grid-cols-2 lg:grid-cols-2 gap-2 px-2 my-10 max-w-screen">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126093.78244303439!2d7.367465296507847!3d9.024416367940095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1698113922014!5m2!1sen!2sng" width="600" height="450" className="rounded-md w-[100%] h-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9463833986865!2d7.311599774204071!3d9.159309686937211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd8fde15a54f1%3A0x6aa43203dc6a5a3e!2s26%20Omega%20Paint%20Rd%2C%20901101%2C%20Kubwa%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1698354970664!5m2!1sen!2sng" width="600" height="450" className="rounded-md w-[100%] h-auto">
                 </iframe>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124957.3565379407!2d13.04947683318244!3d11.841056118955521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11049f4b9b52795b%3A0x63933a66a7b20361!2sMaiduguri%2C%20Borno!5e0!3m2!1sen!2sng!4v1698114511236!5m2!1sen!2sng" width="600" height="450" className="rounded-md w-[100%] h-auto"></iframe>
             </div>

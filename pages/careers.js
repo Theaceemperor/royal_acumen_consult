@@ -1,13 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 
 export default function Careers() {
+    const router = useRouter();
 
     return (
         <>
             <section>
-                <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
-                    <h3>WORKING AT ROYAL ACUMEN</h3>
+                <blockquote id="work-with-us" className=" flex flex-col gap-1 items-center justify-center p-2">
+                    <h3><Link href={'#work-with-us'}>WORKING AT ROYAL ACUMEN</Link></h3>
                     <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
                 </blockquote>
 
@@ -18,15 +21,15 @@ export default function Careers() {
                     Our people not only mmake Royal Acumen a great place to work, but a company with which our business partners want to associate. Hard-working and taking pride in what they do, they are living examples of our core values. We wouldn't be the company we are today without them. 
                 </p>
 
-                <div className="my-10 flex flex-col items-center justify-center gap-5 p-1">
+                <div id="our-team" className="my-10 flex flex-col items-center justify-center gap-5 p-1">
                     <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
-                        <h3>MEET OUR PEOPLE</h3>
+                        <h3><Link href={'#our-team'}>MEET OUR TEAM</Link></h3>
                         <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
                     </blockquote>
 
                     <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
                         <Image 
-                        src={'/images/1.jpg'}
+                        src={'/images/6.jpg'}
                         alt="worker image"
                         width={1020}
                         height={920}
@@ -38,7 +41,7 @@ export default function Careers() {
                     
                     <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
                         <Image 
-                        src={'/images/1.jpg'}
+                        src={'/images/14.jpg'}
                         alt="worker image"
                         width={1020}
                         height={920}
@@ -49,9 +52,9 @@ export default function Careers() {
                     </blockquote>
                 </div>
 
-                <div className="my-10">
+                <div id="apply" className="my-10">
                     <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
-                        <h3>APPLY</h3>
+                        <h3><Link href={'#apply'}>APPLY</Link></h3>
                         <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
                     </blockquote>
 
@@ -60,14 +63,15 @@ export default function Careers() {
                         <br />
                         Are you interested in becoming a part of our team? if yes, take the next step and start building your career with us today.
                     </p>
+                    <article className="flex flex-col gap-3 items-center justify-center text-center mt-5">
+                        <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
+                            <h4>Contact us now to become a part of our team</h4>
+                            <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
+                        </blockquote>
+                        <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5"
+                        onClick={() => router.push('mailto:info4rac@gmail.com')}>Contact us</button>
+                    </article>
                 </div>
-                <article className="flex flex-col gap-3 items-center justify-center text-center">
-                    <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
-                        <h4>Contact us now to become a part of our team</h4>
-                        <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
-                    </blockquote>
-                    <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5">Contact us</button>
-                </article>
             </section>
         </>
     )
