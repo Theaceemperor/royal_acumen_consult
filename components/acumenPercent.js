@@ -3,6 +3,7 @@ import { FaRProject } from "react-icons/fa";
 import { TbMoodHappy } from 'react-icons/tb';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 import { FaPersonCircleCheck } from "react-icons/fa6";
+import MySwiper from "./swiper";
 
 export function HappyClients() {
 
@@ -34,7 +35,8 @@ export function HappyClients() {
                     <FaPersonCircleCheck className="text-4xl text-[tan]" />
                     <aside className="flex flex-col gap-2">
                         <strong className="font-bold">Our clients</strong>
-                        <p><strong>10000+</strong> corporates & individuals</p>
+                        {/* <p><strong>10000+</strong> corporates & individuals</p> */}
+                        <MySwiper />
                     </aside>
                 </div>
             </section>

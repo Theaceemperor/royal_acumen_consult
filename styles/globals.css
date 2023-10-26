@@ -11,4 +11,44 @@ body {
         from {left: -20px;}
         to {left: 20%;}
       }
+    
+      .swiper {
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+      }
+      
+      .swiper-slide img{
+        width: 100%;
+        max-height: 80vh;
+      }
+      
+      .container {
+        display: flex;;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: inherit;
+        margin: 20px 0;    
+      }
+      .swiper .swiper-button-prev {
+        color: #de4f0a;
+      }
+      .swiper .swiper-button-next {
+        color: #de4f0a;
+      }
+      
+      @media screen and (max-width: 700px){
+        .swiper {
+            width: 80%;
+            height: fit-content;
+            text-align: center;
+        }
+        .swiper p{
+            font-size: 12px;
+        }
+        .swiper h1 {
+            font-size: 20px;
+        }
+      }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { RiMenu4Line, RiNotification2Fill } from 'react-icons/ri';
+import { RiMenu4Line } from 'react-icons/ri';
 import { SiHomeassistant } from 'react-icons/si';
 import Link from 'next/link';
 import { IoIosContacts, IoMdStats } from 'react-icons/io';
-import { TfiGallery } from 'react-icons/tfi';
-import MenuListComposition from './popper';
+import MenuListComposition, { PositionedMenu2 } from './popper';
+import { BsPersonFillAdd } from 'react-icons/bs';
 
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -47,11 +47,11 @@ export default function PositionedMenu() {
             color: '#252324'
         }}>
         <MenuItem><Link href={"/"}><SiHomeassistant className="text-xl"/></Link></MenuItem>
-        <MenuItem><Link href={"/about#about"}>About</Link></MenuItem>
+        <MenuItem><PositionedMenu2 /></MenuItem>
         <MenuItem><MenuListComposition /></MenuItem>
         <MenuItem><Link href={"/#stats"} className="flex items-center">Acumen <IoMdStats /></Link></MenuItem>
         <MenuItem><Link href={"/contact#contact-us"} className="flex items-center">C<IoIosContacts />ntact</Link></MenuItem>
-        <MenuItem><Link href={"#subscribe"} className="flex items-center gap-1">Subscribe <RiNotification2Fill /></Link></MenuItem>
+        <MenuItem><Link href={"/careers"} className="flex items-center gap-1">Careers <BsPersonFillAdd /></Link></MenuItem>
         </article>
       </Menu>
     </div>

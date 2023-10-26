@@ -24,7 +24,6 @@ export default function Home() {
       </Head>
 
       <section className='flex flex-col justify-center items-center my-20 gap-3'>
-        <h1 className='text-center text-2xl underline underline-offset-4'><Link href={'#stats'}>Royal Acumen stats</Link></h1>
         <p className='text-center'><Link href={'/about#about'}
         className='underline'>Read about us here!</Link></p>
         <HappyClients />

@@ -2,11 +2,15 @@
 import React from "react";
 import ServiceRow from "./servicerow";
 import Link from "next/link";
+import { ServicePopper } from "./popper";
 
 export default function Services() {
     const [ services,setServices ] = React.useState([
-        { id: 'general-contracts', link: "#general-contracts", text: "General contracts", imageName: "bg-[url('/images/3.jpg')] bg-cover bg-center h-full" },
-        { id: 'sales', link: "#sales", text: "Sales", imageName: "bg-[url('/images/11.jpg')] bg-cover bg-center h-full" },
+        { id: 'general-contracts', link: "#general-contracts", text: "General contracts", imageName: "bg-[url('/images/3.jpg')] bg-cover bg-center h-full", serviceDesc: 'suplies and services, contact us for more information!' },
+        { id: 'sales', link: "#sales", text: "Products & Sales", imageName: "bg-[url('/images/11.jpg')] bg-cover bg-center h-full", serviceDesc: <aside className="flex flex-col gap-1 items-center justify-center">
+            we offer top-notch products such as; lint rollers, fitness trackers e.t.c.
+            <ServicePopper />
+        </aside> },
       ]);
       
     return (
@@ -24,6 +28,7 @@ export default function Services() {
                 link={item.link}
                 text={item.text}
                 imageClass={item.imageName}
+                serviceDesc={item.serviceDesc}
                 />
                 ))
             }
