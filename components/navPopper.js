@@ -6,7 +6,6 @@ import { SiHomeassistant } from 'react-icons/si';
 import Link from 'next/link';
 import { IoIosContacts, IoMdStats } from 'react-icons/io';
 import MenuListComposition, { CarrerMenu, PositionedMenu2 } from './popper';
-import { BsPersonFillAdd } from 'react-icons/bs';
 
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -51,7 +50,7 @@ export default function PositionedMenu() {
         <MenuItem><MenuListComposition /></MenuItem>
         <MenuItem><Link href={"/#stats"} className="flex items-center">Acumen <IoMdStats /></Link></MenuItem>
         <MenuItem><Link href={"/contact#contact-us"} className="flex items-center">C<IoIosContacts />ntact</Link></MenuItem>
-        <MenuItem><Link href={"/careers"} className="flex items-center gap-1"><CarrerMenu /></Link></MenuItem>
+        <MenuItem><CarrerMenu /></MenuItem>
         </article>
       </Menu>
     </div>

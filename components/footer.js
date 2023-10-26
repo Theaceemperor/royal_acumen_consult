@@ -20,7 +20,7 @@ export default function() {
                 </div>
             </section>
             <div className="bottom-0 right-0 fixed flex flex-col h-[100px] p-1 gap-1 items-center justify-center z-20">
-                <Link href={"tel:+2349023236306"}
+                <Link href={"tel:+2348086590003"}
                 className="w-[45px] h-[45px] rounded-full border border-[tan] bg-[#252324] animate-bounce flex items-center justify-center"
                 >
                     <RiCustomerService2Fill
