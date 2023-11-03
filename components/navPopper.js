@@ -48,7 +48,6 @@ export default function PositionedMenu() {
         <MenuItem><Link href={"/"}><SiHomeassistant className="text-xl"/></Link></MenuItem>
         <MenuItem><PositionedMenu2 /></MenuItem>
         <MenuItem><MenuListComposition /></MenuItem>
-        <MenuItem><Link href={"/#stats"} className="flex items-center">Acumen <IoMdStats /></Link></MenuItem>
         <MenuItem><Link href={"/contact#contact-us"} className="flex items-center">C<IoIosContacts />ntact</Link></MenuItem>
         <MenuItem><CarrerMenu /></MenuItem>
         </article>

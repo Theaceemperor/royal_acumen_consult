@@ -59,17 +59,17 @@ export default function Careers() {
                     </blockquote>
 
                     <p className="p-5">
-                        There is a reason that Royal Acumen is a rising star in the consultation industry: simply put, it's our people. From high rises to malls to residential housing to marine projects to top-notch products, we rely on the leadership, talents, and drive of our employees to bring great projects to light. Whether you are a recent graduate or have several years of experience, Royal Acumen offers opportunities for top-notch construction professionals, corporate professionals, tradespeople and product designers at all stages of their careers. 
+                        There is a reason that Royal Acumen is a rising star in the consultation industry: simply put, it's our people. We rely on the leadership, talents, and drive of our employees to bring great projects to light. Whether you are a recent graduate or have several years of experience, Royal Acumen offers opportunities for top-notch construction professionals, corporate professionals, tradespeople and product designers at all stages of their careers. 
                         <br />
                         Are you interested in becoming a part of our team? if yes, take the next step and start building your career with us today.
                     </p>
                     <article className="flex flex-col gap-3 items-center justify-center text-center mt-5">
                         <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
-                            <h4>Contact us now to become a part of our team</h4>
+                            <h4>No vacancy is available at the moment!</h4>
                             <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
                         </blockquote>
-                        <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5"
-                        onClick={() => router.push('mailto:info4rac@gmail.com')}>Contact us</button>
+                        {/* <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5"
+                        onClick={() => router.push('mailto:info4rac@gmail.com')}>Contact us</button> */}
                     </article>
                 </div>
             </section>
