@@ -1,3 +1,4 @@
+import { ButtonPopper } from "@/components/popper";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -20,6 +21,8 @@ export default function Careers() {
                 <p className="p-3">
                     Our people not only mmake Royal Acumen a great place to work, but a company with which our business partners want to associate. Hard-working and taking pride in what they do, they are living examples of our core values. We wouldn't be the company we are today without them. 
                 </p>
+                <br />
+                <div className="flex items-center justify-center"><ButtonPopper /></div>
 
                 <div id="our-team" className="my-10 flex flex-col items-center justify-center gap-5 p-1">
                     <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
@@ -52,7 +55,7 @@ export default function Careers() {
                     </blockquote>
                 </div>
 
-                <div id="apply" className="my-10">
+                {/* <div id="apply" className="my-10">
                     <blockquote className=" flex flex-col gap-1 items-center justify-center p-2">
                         <h3><Link href={'#apply'}>APPLY</Link></h3>
                         <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
@@ -68,10 +71,10 @@ export default function Careers() {
                             <h4>No vacancy is available at the moment!</h4>
                             <span className="w-28 border-t border-[tan] mt-3 text-transparent">------------</span>
                         </blockquote>
-                        {/* <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5"
-                        onClick={() => router.push('mailto:info4rac@gmail.com')}>Contact us</button> */}
+                        <button className="border-y border-tan shadow-sm shadow-[tan] rounded-md py-1 px-5"
+                        onClick={() => router.push('mailto:info4rac@gmail.com')}>Contact us</button>
                     </article>
-                </div>
+                </div> */}
             </section>
         </>
     )

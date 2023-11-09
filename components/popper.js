@@ -48,7 +48,7 @@ export function CarrerMenu() {
         <ul className='p-2 flex flex-col gap-2'>
           <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#work-with-us"} scroll={false} className='flex gap-1 items-center'>Careers <BsPersonFillAdd /></Link></li>
           <li className='hover:bg-[rgb(37,35,36)] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#our-team"} scroll={false} className='flex gap-1 items-center'>Our Team <RiTeamFill /></Link></li>
-          <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#apply"} scroll={false} className='flex gap-1 items-center'>Apply <BsPersonFillCheck /></Link></li>
+          {/* <li className='hover:bg-[#252324] hover:text-[tan] hover:underline hover:p-1 rounded-md'><Link href={"/careers#apply"} scroll={false} className='flex gap-1 items-center'>Apply <BsPersonFillCheck /></Link></li> */}
         </ul>
         </blockquote>
       </Menu>
@@ -212,6 +212,50 @@ export function ServicePopper() {
             />
             Lint rollers
           </span>
+        </blockquote>
+      </Menu>
+    </div>
+  );
+}
+
+export function ButtonPopper() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div className='z-10'>
+      <button
+        id="demo-positioned-button"
+        aria-controls={open ? 'demo-positioned-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+        className='underline underline-offset-2'
+      >Apply</button>
+      <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+      >
+        <blockquote
+        className='p-2 text-center'>
+          <p>No vacancy at the moment</p>
         </blockquote>
       </Menu>
     </div>
