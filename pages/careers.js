@@ -32,17 +32,17 @@ export default function Careers() {
 
                     <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
                         <Image 
-                        src={'/images/6.jpg'}
-                        alt="worker image"
+                        src={'/images/it_person.jpg'}
+                        alt="it specialist image"
                         width={1020}
                         height={920}
                         className="w-80 h-auto border-b-2 border-[tan]"
                         />
-                        <h5>John Doe</h5>
-                        <small>Operations Management</small>
+                        {/* <h5>John Doe</h5> */}
+                        <small>IT Specialist</small>
                     </blockquote>
                     
-                    <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
+                    {/* <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
                         <Image 
                         src={'/images/14.jpg'}
                         alt="worker image"
@@ -52,7 +52,7 @@ export default function Careers() {
                         />
                         <h5>Jsmith</h5>
                         <small>Projects Control</small>
-                    </blockquote>
+                    </blockquote> */}
                 </div>
 
                 {/* <div id="apply" className="my-10">
