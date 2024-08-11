@@ -32,7 +32,7 @@ export default function Careers() {
 
                     <blockquote className="w-[fit-content] text-center flex flex-col gap-2 pb-2 rounded-md shadow-sm shadow-[tan] border">
                         <Image 
-                        src={'/images/it_person.jpg'}
+                        src={'/images/It_person.jpg'}
                         alt="it specialist image"
                         width={1020}
                         height={920}
